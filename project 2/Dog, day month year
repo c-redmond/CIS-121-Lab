@@ -1,0 +1,7 @@
+humanYears = float(input('enter your age'))
+dogAge = humanYears * 7
+dogYears = int(dogAge) 
+dogMonthsInter = (dogAge - float(dogYears)) * 12
+dogMonths = int(dogMonthsInter)
+dogDays = int((dogMonthsInter - dogMonths) * 30.416666666666666666666666666666)
+print(f'Years: {dogYears} Months: {dogMonths} days:{dogDays}')

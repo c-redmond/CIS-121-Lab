@@ -1,0 +1,7 @@
+humanYears = float(input('enter your age'))
+days = humanYears * 7 * 365
+years = int(days // 365)
+remainingDays = years % 365
+months = remainingDays //30.41666
+days = remainingDays % 30.41666
+print(f'years: {years} months: {months} days: {days}')

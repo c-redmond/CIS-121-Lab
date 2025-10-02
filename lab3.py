@@ -3,13 +3,13 @@ marital_Status = input("are you married?")
 if earned_Income <= 11000 and marital_Status == "no":
     print("tax rate: 10%")
 elif 11001 <= earned_Income <= 44725 and marital_Status == "no":
-        print("tax rate: 12%")
+    print("tax rate: 12%")
 elif 44726 <= earned_Income <= 95375 and marital_Status == "no":
       print("tax rate: 22%")
 
 if earned_Income <= 22000 and marital_Status == "yes":
     print("tax rate: 10%")
 elif 22001 <= earned_Income <= 89450 and marital_Status == "yes":
-        print("tax rate: 12%")
+    print("tax rate: 12%")
 elif 89451 <= earned_Income <= 190750 and marital_Status == "yes":
       print("tax rate: 22%")
