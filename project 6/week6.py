@@ -24,6 +24,24 @@ def count(list_of_cards):
 deck_1 = [5,9,10,3,'j','a',4,8,5]
 deck_2 = ['a','a','k','q','q','j']
 
-print(count(deck_2))
+
+
+#querstion 19
+
+def is_acronym(s,words):
+    if len(s) != len(words):
+        return False
+    for i in range (0,len(words)):
+        current_word = words[i]
+        if word == " ":
+            return False
+    if s[i] != current_word[0]:
+        for word in words:
+            first_letter = word[0]
+    return True
+
+
+
+
 
 
