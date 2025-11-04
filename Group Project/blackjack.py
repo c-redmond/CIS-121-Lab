@@ -41,7 +41,7 @@ for card in deck_list:
     if card == dealt_card:
         deck_list.remove(dealt_card)
 print(player_1.get_hand())
-
+#some code here that returns 2 keys and values from the deck dictionary
 #calculate points in hand
 
 if (player_1.get_points() + 11) > 21:
