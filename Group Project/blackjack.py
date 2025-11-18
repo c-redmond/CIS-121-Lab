@@ -69,13 +69,19 @@ else:
     double_down = 0
 
 #hit/stay logic
-hit_stay = input('would you like to hit or stay?')
-if hit_stay == 'hit':
-    deal(player_1, deck_list)
-elif hit_stay == 'stay':
-    pass
-else:
-    print('invalid input')
+done = False
+while not done:
+    hit_stay = input('would you like to hit or stay?')
+    if hit_stay == 'hit':
+        deal(player_1, deck_list)
+    elif hit_stay == 'stay':
+        done = True
+        pass
+    else:
+        print('invalid input')
+    print(f'your hand: {player_1.get_hand()}')
+    print(f"dealer's hand: {computer_player.get_hand()}")
+
 
 #dealer logic. the dealer will always hit if their point total is 16 or lower
 
@@ -93,3 +99,4 @@ elif player_points < comp_points:
 else:
     print("it's a tie")
     print(f'money: ${player_1.get_money()}')'''
+
